@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class ArrayList扩容 {
 
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
-        ArrayList<Integer> arrayList = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<Integer>();
 
         arrayList.add(1);
         System.out.println(getArrayListCapacity(arrayList));

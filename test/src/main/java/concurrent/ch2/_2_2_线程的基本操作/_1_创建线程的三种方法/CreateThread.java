@@ -48,7 +48,7 @@ public class CreateThread {
         //使用 FutureTask 对象作为 Thread 对象的 target 创建并启动新线程。
         //调用 FutureTask 对象的 get() 方法来获得子线程执行结束后的返回值。
         CreatThread3 creatThread3 = new CreatThread3();
-        FutureTask<Integer> futureTask = new FutureTask<>(creatThread3);
+        FutureTask<Integer> futureTask = new FutureTask<Integer>(creatThread3);
         new Thread(futureTask, "我有返回值").start();
         try {
             System.out.println("线程的返回值：" + futureTask.get());
